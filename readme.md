@@ -1,3 +1,6 @@
-# Produce maintainable CSS stylesheets with SASS
+# luke-mcfarland
+Personal Portfolio Website for Luke Mcfarland
 
-CSS is the palette we use to paint the web, making pages beautiful, identifiable, and responsive. In this class we’ll learn to write clean, maintainable, and modular CSS code through the implementation of designed naming and file structures, such as BEM, and the use of SASS, a CSS precompiler.
+https://www.lukemcfarland.com/
+
+Built in Github and deployed on Netlify
