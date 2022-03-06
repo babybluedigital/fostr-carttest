@@ -1,0 +1,161 @@
+<!DOCTYPE HTML>
+<html lang="en">
+
+	<head>
+		<title>Luke Mcfarland</title>
+		<link rel="shortcut icon" type="image/jpg" href="images/personalsnap.png"/>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,300,200,700,900" rel="stylesheet" type="text/css">	
+		<link href="https://fonts.googleapis.com/css?family=Roboto:400,600,300,200,700,900" rel="stylesheet" type="text/css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+		<script src="javascript/my.js"></script>
+	</head>
+
+	<style>
+
+body,
+html {
+  height: 100%;
+  padding: 0;
+  margin: 0;
+}
+
+main {
+  z-index: 2;
+  position: relative;
+  height: 100%;
+  background-color: #fff;
+  -webkit-transition: transform .7s ease-in-out;
+  -moz-transition: transform .7s ease-in-out;
+  -ms-transition: transform .7s ease-in-out;
+  -o-transition: transform .7s ease-in-out;
+  transition: transform .7s ease-in-out;
+}
+
+.sidebar {
+  height: 100%;
+  width: 500px;
+  position: fixed;
+  top: 0;
+  z-index: 1;
+  right: 0;
+  background-color: #EF8354;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.sidebar_container {
+  padding: 30px 90px 30px 50px;
+}
+
+.sidebar_heading {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    padding-bottom: 10px;
+    border-bottom: 1px solid grey;
+}
+
+.move-to-left {
+  -webkit-transform: translateX(-500px);
+  -moz-transform: translateX(-500px);
+  -ms-transform: translateX(-500px);
+  -o-transform: translateX(-500px);
+  transform: translateX(-500px);
+}
+
+.sidebar-item:nth-child(2) {
+  -webkit-transition: all .7s .4s ease-in-out;
+  -moz-transition: all .7s .4s ease-in-out;
+  -ms-transition: all .7s .4s ease-in-out;
+  -o-transition: all .7s .4s ease-in-out;
+  transition: all .7s .4s ease-in-out;
+}
+
+.sidebar_product {
+  display: flex;
+  align-items: center;
+  align-content: center;
+  justify-content: flex-start;
+  border-bottom: 1px solid grey;
+  margin: 5px 30px 5px 0px;
+  padding: 20px 0px;
+}
+
+.sidebar_product img {
+  max-width: 170px;
+}
+
+.sidebar_product_description {
+  display: flex;
+  flex-direction: column;
+  align-content: flex-start;
+  align-items: flex-start;
+}
+
+.sidebar_product_description h4 {
+  text-align: left;
+  margin: 0px;
+}
+
+.cart_button {
+  cursor: pointer;
+}
+
+.transperent{opacity:0.5;}
+
+	</style>
+
+	<body class="button_click" style="margin: 0px; max-width: 100vw;">
+
+
+    <header>
+
+			<div  class="header_menu">
+				<img src="images/logo.svg" alt="logo" id="header__logo">
+				<img src="images/bag 2.png" alt="bag-2" id="header__bag" class="cart_button">
+		</header>
+
+		  <main>		  
+
+		  </main>
+		  
+    <div class="sidebar">
+
+      <div class="sidebar_container">
+
+        <div class="sidebar_heading">
+
+          <h3>Your Bag</h3>
+  
+        </div>
+  
+        <div class="sidebar_product">
+            <img src="images/chicken.png" alt="chicken">
+          <div class="sidebar_product_description">
+            <h4>Natures Menu Dog Food Can Chicken</h4>
+            <h6>£22.81</h6>
+            <a href="">REMOVE</a>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="sidebar_foter">
+
+        <div class="sidebar_product_description">
+          <h4>Subtotal: £22.81</h4>
+          <a class="primary_button" href="">PROCEED TO CHECKOUT</a>
+          <a href="">CONTINUE SHOPPING</a>
+        </div>
+
+      </div>
+      
+    </div>
+
+	</body>
+
+</html>
