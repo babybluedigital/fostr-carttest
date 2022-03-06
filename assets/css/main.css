@@ -1,13 +1,10 @@
 /* Variable Declared */
 /* Variable Declared End */
 /* General Page Styles */
-.body {
+body, html {
   margin: 0 auto;
   width: 100%;
   height: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
 }
 
 h1, h2, h3, h4, h5, h6, p, span, a {
@@ -32,6 +29,12 @@ h3 {
 h4 {
   font-size: 18px;
   font-weight: 300;
+  text-align: center;
+}
+
+h5 {
+  font-size: 17px;
+  font-weight: 500;
   text-align: center;
 }
 
@@ -65,7 +68,8 @@ a {
   border-radius: 50px;
   padding: 10px 40px;
   text-decoration: none;
-  font-size: 10px;
+  font-size: 12px;
+  font-weight: 600;
 }
 
 .primary_button:hover {
@@ -145,7 +149,7 @@ a {
   padding: 10px;
 }
 
-#section_col_item_blue {
+.section_col_item:nth-of-type(2) {
   background-color: #EBF6F8;
 }
 
@@ -185,6 +189,141 @@ a {
 }
 
 /* Body Styling Ends */
+/* Side Bar Styling Starts */
+.sidebar {
+  height: 100%;
+  width: 500px;
+  position: fixed;
+  top: 0;
+  z-index: 10000;
+  right: 0;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.sidebar_container {
+  padding: 30px 90px 30px 50px;
+}
+
+.sidebar_heading {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  padding-bottom: 10px;
+  border-bottom: 1px solid;
+  border-color: #EBEBEB;
+}
+
+.sidebar_product {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  border-bottom: 1px solid grey;
+  margin: 5px 30px 5px 0px;
+  padding: 20px 0px;
+}
+
+.sidebar_product img {
+  max-width: 170px;
+}
+
+.sidebar_product_description {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-line-pack: start;
+      align-content: flex-start;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+.sidebar_product_description h4 {
+  text-align: left;
+  margin: 0px;
+}
+
+.sidebar_footer {
+  padding: 30px 90px 30px 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border-top: 1px solid;
+  border-color: #EBEBEB;
+}
+
+.sidebar_footer_description {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.cart_button {
+  cursor: pointer;
+}
+
+.transperent {
+  background-color: rgba(0, 0, 0, 0.3);
+  /* FF4+ */
+  /* Opera 10.5+ */
+  -webkit-transition: all 0.4s ease-out;
+  /* Saf3.2+, Chrome */
+  /* IE10? */
+  transition: all 0.4s ease-out;
+}
+
+.hidden {
+  background-color: #fff;
+  -webkit-transform: translateX(-500px);
+  transform: translateX(-500px);
+}
+
+/* Side Bar Styling Ends */
 /* Footer Styling Starts */
 /* Footer Styling Ends */
 /* Moile Responsive Styling */

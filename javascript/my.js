@@ -1,23 +1,9 @@
-$(document).ready(function() {
 
-function toggleSidebar() {
-    $(".cart_button").toggleClass("active");
-    $("main").toggleClass("move-to-left");
-    $(".sidebar-item").toggleClass("active");
-}
-
-$(".cart_button").on("click tap", function() {
-    toggleSidebar();
+$(document).ready(function(){
+    $("#header__bag").click(function(){
+    $(".sidebar").toggleClass("hidden");
+    });
 });
-
-$(document).keyup(function(e) {
-    if (e.keyCode === 27) {
-    toggleSidebar();
-    }
-});
-
-});
-
 
 $(document).ready(function(){
     $(".cart_button").click(function(){
@@ -32,7 +18,7 @@ class Header extends HTMLElement {
 
             <div  class="header_menu">
                 <img src="images/logo.svg" alt="logo" id="header__logo">
-                <img src="images/bag 2.png" alt="bag-2" id="header__bag">
+                <img src="images/bag 2.png" alt="bag-2" id="header__bag" class="cart_button">
             </div>
 
             </header>
@@ -40,4 +26,4 @@ class Header extends HTMLElement {
     }
   }
 
-  customElements.define('main-header', Header);
+  customElements.define('global-header', Header);

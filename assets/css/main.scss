@@ -17,11 +17,10 @@ $max-width: 1200px;
 
 /* General Page Styles */
 
-.body {
+body, html {
   margin: 0 auto;
   width: 100%;
   height: 100%;
-  display: flex;
 }
 
 h1, h2, h3, h4, h5, h6, p, span, a {
@@ -46,6 +45,12 @@ h3 {
 h4 {
   font-size: 18px;
   font-weight: 300;
+  text-align: center;
+}
+
+h5 {
+  font-size: 17px;
+  font-weight: 500;
   text-align: center;
 }
 
@@ -79,7 +84,8 @@ a {
   border-radius: 50px;
   padding: 10px 40px;
   text-decoration: none;
-  font-size: 10px;
+  font-size: 12px;
+  font-weight: 600;
 }
 
 .primary_button:hover {
@@ -143,7 +149,7 @@ a {
   padding: 10px;
 }
 
-#section_col_item_blue {
+.section_col_item:nth-of-type(2) {
   background-color: $main-background;
 }
 
@@ -182,6 +188,101 @@ a {
 }
 
 /* Body Styling Ends */
+
+/* Side Bar Styling Starts */
+
+.sidebar {
+  height: 100%;
+  width: 500px;
+  position: fixed;
+  top: 0;
+  z-index: 10000;
+  right: 0;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.sidebar_container {
+  padding: 30px 90px 30px 50px;
+}
+
+.sidebar_heading {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    padding-bottom: 10px;
+    border-bottom: 1px solid;
+    border-color: $grey-borders;
+}
+
+.sidebar_product {
+  display: flex;
+  align-items: center;
+  align-content: center;
+  justify-content: flex-start;
+  border-bottom: 1px solid grey;
+  margin: 5px 30px 5px 0px;
+  padding: 20px 0px;
+}
+
+.sidebar_product img {
+  max-width: 170px;
+}
+
+.sidebar_product_description {
+  display: flex;
+  flex-direction: column;
+  align-content: flex-start;
+  align-items: flex-start;
+}
+
+.sidebar_product_description h4 {
+  text-align: left;
+  margin: 0px;
+}
+
+.sidebar_footer {
+  padding: 30px 90px 30px 50px;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  align-items: center;
+  justify-content: center;
+  border-top: 1px solid;
+  border-color: $grey-borders;
+}
+
+.sidebar_footer_description {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  align-items: center;
+}
+
+
+.cart_button {
+  cursor: pointer;
+}
+
+.transperent {
+  background-color:rgba(0, 0, 0, 0.3);
+  -moz-transition: all 0.4s ease-out;  /* FF4+ */
+  -o-transition: all 0.4s ease-out;  /* Opera 10.5+ */
+  -webkit-transition: all 0.4s ease-out;  /* Saf3.2+, Chrome */
+  -ms-transition: all 0.4s ease-out;  /* IE10? */
+  transition: all 0.4s ease-out;  
+}
+
+.hidden {
+  background-color: #fff;
+  -webkit-transform: translateX(-500px);
+  -moz-transform: translateX(-500px);
+  -ms-transform: translateX(-500px);
+  -o-transform: translateX(-500px);
+  transform: translateX(-500px);
+}
+
+/* Side Bar Styling Ends */
 
 /* Footer Styling Starts */
 
