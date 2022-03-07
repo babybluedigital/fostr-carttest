@@ -149,8 +149,12 @@ a {
   padding: 10px;
 }
 
-.section_col_item:nth-of-type(2) {
+#section_col_item_blue {
   background-color: $main-background;
+}
+
+#transparent2 {
+  background-color: red !important;
 }
 
 .section_col_description {

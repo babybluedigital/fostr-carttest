@@ -7,7 +7,7 @@ $(document).ready(function(){
 
 $(document).ready(function(){
     $(".cart_button").click(function(){
-    $("body").toggleClass("transperent");
+    $("#section_col_item_blue").toggleId("transperent2");
     });
 });
 
