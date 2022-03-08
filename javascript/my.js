@@ -1,15 +1,31 @@
-
-$(document).ready(function(){
-    $("#header__bag").click(function(){
-    $(".sidebar").toggleClass("hidden");
-    });
-});
-
 $(document).ready(function(){
     $(".cart_button").click(function(){
-    $("#section_col_item_blue").toggleId("transperent2");
+      $(".overlay").toggleClass("hidden");
+    });
+  });
+
+  $(document).ready(function(){
+    $(".close-container").click(function(){
+      $(".overlay").toggleClass("hidden");
+    });
+  });
+
+
+$(document).ready(function(){
+    var boxWidth = $(".sidebar").width();
+    $(".close-container").click(function(){
+        $(".sidebar").animate({
+            width: 0
+        });
+    });
+    $(".cart_button").click(function(){
+        $(".sidebar").animate({
+            width: 400
+        });
     });
 });
+
+
 
 class Header extends HTMLElement {
     connectedCallback() {

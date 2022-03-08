@@ -77,20 +77,25 @@ a {
   color: $grey-borders;
 }
 
+a:hover {
+  color: $orange;
+}
+
 .primary_button {
   background-color: $orange;
-  color: $white;
+  color: $white !important;
   border: 1px solid transparent;
   border-radius: 50px;
   padding: 10px 40px;
   text-decoration: none;
   font-size: 12px;
   font-weight: 600;
+  text-align: center;
 }
 
 .primary_button:hover {
   background-color: $white;
-  color: $orange;
+  color: $orange !important;
   border-color: $orange;
   border: solid 1px;
   transition: all .4s ease;
@@ -121,7 +126,7 @@ a {
 #header__bag {
   max-width: 25px;
   max-height: 25px;
-  z-index: 9999;
+  z-index: 10;
   padding-right: 40px;
 }
 
@@ -197,24 +202,26 @@ a {
 
 .sidebar {
   height: 100%;
-  width: 500px;
+  width: 29vw;
+  display: flex;
   position: fixed;
   top: 0;
-  z-index: 10000;
-  right: 0;
+  z-index: 100;
+  right: -30px;
   flex-direction: column;
   justify-content: space-between;
+  background-color: $white;
 }
 
 .sidebar_container {
-  padding: 30px 90px 30px 50px;
+  padding: 0px;
 }
 
 .sidebar_heading {
     display: flex;
     flex-direction: row;
-    justify-content: flex-start;
-    padding-bottom: 10px;
+    justify-content: space-between;
+    padding: 20px 40px;
     border-bottom: 1px solid;
     border-color: $grey-borders;
 }
@@ -224,9 +231,9 @@ a {
   align-items: center;
   align-content: center;
   justify-content: flex-start;
-  border-bottom: 1px solid grey;
-  margin: 5px 30px 5px 0px;
-  padding: 20px 0px;
+  border-bottom: 1px solid $grey-borders;
+  margin: 20px 50px;
+  padding: 0px 0px 20px 0px;
 }
 
 .sidebar_product img {
@@ -263,27 +270,79 @@ a {
   align-items: center;
 }
 
+.sidebar_footer_description a {
+  color: $black-text;
+  text-decoration: none;
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.sidebar_footer_description a:hover {
+  color: $orange;
+}
+
 
 .cart_button {
   cursor: pointer;
 }
 
-.transperent {
-  background-color:rgba(0, 0, 0, 0.3);
-  -moz-transition: all 0.4s ease-out;  /* FF4+ */
-  -o-transition: all 0.4s ease-out;  /* Opera 10.5+ */
-  -webkit-transition: all 0.4s ease-out;  /* Saf3.2+, Chrome */
-  -ms-transition: all 0.4s ease-out;  /* IE10? */
-  transition: all 0.4s ease-out;  
+.hidden {
+  transform:translate(9999px);
+  opacity: 0 !important;  
 }
 
-.hidden {
-  background-color: #fff;
-  -webkit-transform: translateX(-500px);
-  -moz-transform: translateX(-500px);
-  -ms-transform: translateX(-500px);
-  -o-transform: translateX(-500px);
-  transform: translateX(-500px);
+.overlay {
+  background-color: rgba(0, 0, 0, 0.3);
+  position: relative;
+  display: flex;
+  z-index: 9;
+  top: 0;
+  height: 100%;
+  width: 100vw;
+  position: fixed;
+  top: 0;
+  left: 0;
+  transition: opacity 1s linear;  
+  transform:translate(0);
+  opacity: 1;
+}
+
+
+.close-container{
+  position: relative;
+  width: 60px;
+  cursor: pointer;
+}
+
+.leftright{
+  height: 2px;
+  width: 25px;
+  position: absolute;
+  margin-top: 24px;
+  background-color: $black-text;
+  border-radius: 2px;
+  transform: rotate(45deg);
+  transition: all .3s ease-in;
+}
+
+.rightleft{
+  height: 2px;
+  width: 25px;
+  position: absolute;
+  margin-top: 24px;
+  background-color: $black-text;
+  border-radius: 2px;
+  transform: rotate(-45deg);
+  transition: all .3s ease-in;
+}
+
+.close-container:hover .leftright{
+  transform: rotate(-45deg);
+  background-color: $orange;
+}
+.close-container:hover .rightleft{
+  transform: rotate(45deg);
+  background-color: $orange;
 }
 
 /* Side Bar Styling Ends */
