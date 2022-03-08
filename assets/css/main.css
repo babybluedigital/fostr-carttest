@@ -75,10 +75,11 @@ a:hover {
   font-size: 12px;
   font-weight: 600;
   text-align: center;
+  z-index: 20;
 }
 
 .primary_button:hover {
-  background-color: #fff;
+  background-color: transparent;
   color: #ff5c00 !important;
   border-color: #ff5c00;
   border: solid 1px;
@@ -107,7 +108,7 @@ a:hover {
 
 #header__logo {
   max-width: 70px;
-  z-index: 9999;
+  z-index: 99;
   padding: 0px 20px;
 }
 
@@ -201,14 +202,14 @@ a:hover {
 /* Side Bar Styling Starts */
 .sidebar {
   height: 100%;
-  width: 29vw;
+  width: 40vw;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   position: fixed;
   top: 0;
   z-index: 100;
-  right: -30px;
+  right: -125px;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
@@ -217,6 +218,8 @@ a:hover {
       -ms-flex-pack: justify;
           justify-content: space-between;
   background-color: #fff;
+  overflow-y: scroll;
+  overflow-x: hidden;
 }
 
 .sidebar_container {
@@ -254,10 +257,11 @@ a:hover {
   border-bottom: 1px solid #EBEBEB;
   margin: 20px 50px;
   padding: 0px 0px 20px 0px;
+  max-width: 315px;
 }
 
 .sidebar_product img {
-  max-width: 170px;
+  max-width: 150px;
 }
 
 .sidebar_product_description {
@@ -278,6 +282,7 @@ a:hover {
 .sidebar_product_description h4 {
   text-align: left;
   margin: 0px;
+  font-size: 15px;
 }
 
 .sidebar_footer {
@@ -331,6 +336,11 @@ a:hover {
   cursor: pointer;
 }
 
+#cart_button {
+  font-size: 12px;
+  padding: 10px 30px;
+}
+
 .hidden {
   -webkit-transform: translate(9999px);
           transform: translate(9999px);
@@ -359,7 +369,7 @@ a:hover {
 
 .close-container {
   position: relative;
-  width: 60px;
+  width: 160px;
   cursor: pointer;
 }
 
@@ -447,5 +457,49 @@ a:hover {
   }
 }
 
+/* Sidebar Mobile Styling Start */
+@media only screen and (min-width: 200px) and (max-width: 1200px) {
+  .sidebar {
+    width: 430px !important;
+  }
+  .sidebar_product {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: flex-start;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    max-width: 230px;
+  }
+  .sidebar_footer {
+    -ms-flex-line-pack: start;
+        align-content: flex-start;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+  .sidebar_footer_description {
+    -ms-flex-line-pack: start;
+        align-content: flex-start;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+  .sidebar_footer_description h5 {
+    margin-left: 15px;
+  }
+  .sidebar_footer_description a {
+    margin-left: 15px;
+  }
+  #cart_button {
+    margin-left: 0px;
+  }
+}
+
+/* Sidebar Mobile Styling End */
 /* Moile Responsive Styling End */
 /*# sourceMappingURL=main.css.map */
