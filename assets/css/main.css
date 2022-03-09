@@ -202,7 +202,7 @@ a:hover {
 /* Side Bar Styling Starts */
 .sidebar {
   height: 100%;
-  width: 40vw;
+  width: 35vw;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -255,9 +255,9 @@ a:hover {
       -ms-flex-pack: start;
           justify-content: flex-start;
   border-bottom: 1px solid #EBEBEB;
-  margin: 20px 50px;
+  margin: 20px 30px;
   padding: 0px 0px 20px 0px;
-  max-width: 315px;
+  max-width: 300px;
 }
 
 .sidebar_product img {
@@ -286,7 +286,7 @@ a:hover {
 }
 
 .sidebar_footer {
-  padding: 30px 90px 30px 50px;
+  padding: 30px 90px 30px 0px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -477,23 +477,22 @@ a:hover {
   }
   .sidebar_footer {
     -ms-flex-line-pack: start;
-        align-content: flex-start;
+    align-content: center;
     -webkit-box-align: start;
-        -ms-flex-align: start;
-            align-items: flex-start;
-  }
-  .sidebar_footer_description {
-    -ms-flex-line-pack: start;
-        align-content: flex-start;
-    -webkit-box-align: start;
-        -ms-flex-align: start;
-            align-items: flex-start;
-  }
-  .sidebar_footer_description h5 {
-    margin-left: 15px;
-  }
-  .sidebar_footer_description a {
-    margin-left: 15px;
+    -ms-flex-align: start;
+    align-items: center;
+    padding: 30px 0px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    max-width: 300px;
   }
   #cart_button {
     margin-left: 0px;
