@@ -1,0 +1,22 @@
+{
+  "name": "grunt-project",
+  "version": "1.0.0",
+  "description": "Product landing page and cart built for Fostr web development role test.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/babyblueprojects/fostr-carttest.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/babyblueprojects/fostr-carttest/issues"
+  },
+  "homepage": "https://github.com/babyblueprojects/fostr-carttest#readme",
+  "dependencies": {
+    "grunt": "^1.4.1"
+  }
+}
