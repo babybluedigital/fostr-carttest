@@ -23,7 +23,7 @@ Following this, I proceeded with the static build (Ensuring mobile responsivenes
 
 This put me outside of my comfort zone as I tend to rely on using frameworks to achieve this. I have tried to balance the need for meeting a delivery to the Fostr team and not wanting to spend more capacity on this than I currently have available. Given more time I would have committed more resources to a more streamlined cart animation.
 
-Lastly will be my first attempt at using Grunt to bundle my js file. At the time of this writing, this is still underway.
+Lastly will be my first attempt at using Grunt to bundle my js file. At the time of this writing, this is still underway. (Grunt has now been installed)
 
 I hope to discuss the role further and meet the team to gain a better understanding of the requirements of the role.
 
